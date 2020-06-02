@@ -1,15 +1,16 @@
 package ar.edu.unju.fi.model;
 
-import java.time.*;
-import org.springframework.beans.factory.annotation.Autowired;
+import java.time.LocalDate;
+
 import org.springframework.stereotype.Component;
 
 /**
- * Representa el estadio donde se juega un partido de f煤tbol de La Liga de
- * F煤tbol
+ * Representa el estadio donde se juega un partido de f鷗bol de La Liga de
+ * F鷗bol
  * 
  * @author Natalia
  */
+
 @Component
 public class Estadio2 {
 
@@ -18,12 +19,12 @@ public class Estadio2 {
 	 */
 
 	/**
-	 * Represnta el Nombre del Estadio donde juegan los partidos la Liga de F煤tbol
+	 * Represnta el Nombre del Estadio donde juegan los partidos la Liga de F鷗bol
 	 */
 	private String nombre;
 
 	/**
-	 * Representa la Fecha de Fundaci贸n del estadio del equipo de f煤tbol
+	 * Representa la Fecha de Fundaci髇 del estadio del equipo de f鷗bol
 	 */
 	private LocalDate fechaFundacion;
 
@@ -38,31 +39,31 @@ public class Estadio2 {
 	private int capacidad;
 
 	/**
-	 * Representa la Direcci贸n donde esta ubicado el estadio
+	 * Representa la Direcci髇 donde esta ubicado el estadio
 	 */
-	private String direcci贸n;
+	private String direcci髇;
 
 	/*
 	 * ---CONSTRUCTORES---
 	 */
 	/**
-	 * Constructor parametrizado que recibe el nombre ,fecha de fundaci贸n la
-	 * ciudad,capacidad y direcci贸n del estadio
+	 * Constructor parametrizado que recibe el nombre ,fecha de fundaci髇 la
+	 * ciudad,capacidad y direcci髇 del estadio
 	 * 
 	 * @param String    nombre
 	 * @param LocalDate fechaFundacion
 	 * @param String    ciudad
 	 * @param int       capacidad
-	 * @param String    direccion
+	 * @param String    direcci髇
 	 */
-	@Autowired
-	public Estadio2(String nombre, LocalDate fechaFundacion, String ciudad, int capacidad, String direcci贸n) {
-
-		this.nombre = nombre;
-		this.fechaFundacion = fechaFundacion;
-		this.ciudad = ciudad;
-		this.capacidad = capacidad;
-		this.direcci贸n = direcci贸n;
+	public Estadio2(String nombre,LocalDate fechaFundacion,String ciudad,int capacidad,String direcci髇) {
+	
+		this.nombre= nombre;
+		this.fechaFundacion=fechaFundacion;
+		this.ciudad=ciudad;
+		this.capacidad=capacidad;
+		this.direcci髇=direcci髇;
+		
 	}
 	/*
 	 * --METODOS ACCESORES---
@@ -87,7 +88,7 @@ public class Estadio2 {
 	}
 
 	/**
-	 * Devuelve la fecha de fundaci贸n
+	 * Devuelve la fecha de fundaci髇
 	 * 
 	 * @return this fechaFundacion la fecha de fundacion del estadio
 	 */
@@ -96,7 +97,7 @@ public class Estadio2 {
 	}
 
 	/**
-	 * Asigna a fechaFundacion un valor de fecha de fundaci贸n del estadio
+	 * Asigna a fechaFundacion un valor de fecha de fundaci髇 del estadio
 	 * 
 	 * @param fechaFundacion dato de fechaFundacion
 	 */
@@ -144,30 +145,26 @@ public class Estadio2 {
 	/**
 	 * Devulve la direccion donde se ubica el estadio
 	 * 
-	 * @return this direcci贸n
+	 * @return this direcci髇
 	 */
-	public String getDirecci贸n() {
-		return direcci贸n;
+	public String getDirecci髇() {
+		return direcci髇;
 	}
 
 	/**
 	 * Asigna a direccion el valor de direccion del estadio
 	 * 
-	 * @param direcci贸n la direcci贸n
+	 * @param direcci髇 la direcci髇
 	 */
-	public void setDirecci贸n(String direcci贸n) {
-		this.direcci贸n = direcci贸n;
+	public void setDirecci髇(String direcci髇) {
+		this.direcci髇 = direcci髇;
 	}
 
 	@Override
 	public String toString() {
-		return "Estadio2 [nombre=" + nombre + ", fechaFundacion=" + fechaFundacion + ", ciudad=" + ciudad
-				+ ", capacidad=" + capacidad + ", direcci贸n=" + direcci贸n + ", getNombre()=" + getNombre()
-				+ ", getFechaFundacion()=" + getFechaFundacion() + ", getCiudad()=" + getCiudad() + ", getCapacidad()="
-				+ getCapacidad() + ", getDirecci贸n()=" + getDirecci贸n() + ", getClass()=" + getClass() + ", hashCode()="
-				+ hashCode() + ", toString()=" + super.toString() + "]";
+		return "Estadio2 [nombre=" + nombre + ", ciudad=" + ciudad + ", capacidad=" + capacidad + ", direcci髇="
+				+ direcci髇 + ", getNombre()=" + getNombre() + ", getCiudad()=" + getCiudad() + ", getCapacidad()="
+				+ getCapacidad() + ", getDirecci髇()=" + getDirecci髇() + "]";
 	}
-
-	
 
 }

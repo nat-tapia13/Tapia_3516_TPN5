@@ -11,4 +11,6 @@ public interface ICuota6 {
 	public Cuota6 mostar();
 	public void eliminar();
 	public Cuota6 modificar();
+	
+	
 }

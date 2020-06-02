@@ -1,129 +1,149 @@
 /*-----General----*/
 
 /*---Página----*/
-*{
-	margin:0px;
-	padding:0px;
-}	
-#contenedor{
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+#contenedor {
 	width: 1200px;
 	height: 1000px;
 	background: #c0c0c0;
 	color: #e6e600;
-	margin:1em auto;
-	padding:1em;
+	margin: 1em auto;
+	padding: 1em;
 }
-header{
-	height:20%;
-	background:#004d1a;	
+
+header {
+	height: 20%;
+	background: #004d1a;
 }
-header h1{
-	font-size:55px;
-	text-align:center;
-	line-height:140px;
+
+header h1 {
+	font-size: 55px;
+	text-align: center;
+	line-height: 140px;
 }
-nav{                 /*---Fuente y color del menu de opciones---*/
-	background:#009999;
-	height:9%;	
+
+nav { /*---Fuente y color del menu de opciones---*/
+	background: #009999;
+	height: 9%;
 }
-nav ul li{
-  list-style:none;
-  display:inline-block;
-  padding:0.5em;
-  margin:0.5em;
-  background:#ffffb3; 
+
+nav ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 0.5em;
+	margin: 0.5em;
+	background: #ffffb3;
 }
-#contenido{          /*Contenido de la pagina*/
-	width:99%;
+
+#contenido { /*Contenido de la pagina*/
+	width: 99%;
 	height: 62%;
-	background:#ffffb3;
-	margin:0.5em;
+	background: #ffffb3;
+	margin: 0.5em;
 }
-#section{             /*Sección del contenido*/
+
+#section { /*Sección del contenido*/
 	width: 73%;
-	height:98%;
-	float:left;
-	margin-left:0.5em;
-}                             
-#aside{               /*-----Sección para la publicidad---*/
-	width:22%;
-	height:98%;
+	height: 98%;
+	float: left;
+	margin-left: 0.5em;
+}
+
+#aside { /*-----Sección para la publicidad---*/
+	width: 22%;
+	height: 98%;
 	background: #f2ffcc;
-	float: right;	
+	float: right;
 	margin: 0.5em;
 }
-#aside header{
-	width:96%;	
-	height:7%;
+
+#aside header {
+	width: 96%;
+	height: 7%;
 	background: #d279a6;
 	margin: 0.5em;
-	
 }
-header h2{
-	font-size:30px;
-	line-height:100%;
-	text-align:center;
-}                    
-footer{   	          /*---Contenido para el pie de página---*/
-	clear:both;
-	background:#004d1a;
-	padding:0.5em;
-}          
+
+header h2 {
+	font-size: 30px;
+	line-height: 100%;
+	text-align: center;
+}
+
+footer { /*---Contenido para el pie de página---*/
+	clear: both;
+	background: #004d1a;
+	padding: 0.5em;
+}
+
 footer h2 {
-	text-align:center;	
-	font-size:27px;
-}	
-.noticias{      /*Estilo para la parte del contenido de la página*/
-	width:99%;
+	text-align: center;
+	font-size: 27px;
+}
+
+.noticias { /*Estilo para la parte del contenido de la página*/
+	width: 99%;
 	background: #d279a6;
 }
-.noticias h2{
-	font-size:35px;
-	line-height:45px;
-	margin:0.5em;
+
+.noticias h2 {
+	font-size: 35px;
+	line-height: 45px;
+	margin: 0.5em;
 }
-table{
-	width:98%;
-	height:68%;
-	margin:0.5em;
-	background:#ffe6ff;
-	
+
+table {
+	width: 98%;
+	height: 68%;
+	margin: 0.5em;
+	background: #ffe6ff;
 }
-table td,th{
+
+table td, th {
 	font-family: sans-serif;
-	padding-top:10px;
-	margin:10px;
-	text-align:center;
-	line-heigth:10px;
-	font-size:26px;
+	padding-top: 10px;
+	margin: 10px;
+	text-align: center;
+	line-heigth: 10px;
+	font-size: 26px;
 }
-	
-.table{            /*Estilo para la parte del contenido de la parte de Fixture y Resultados*/
-	width:65%;
-	heigth:25%;
-	margen:1em;
-	border-collapse:collapse;
+
+.table {
+	/*Estilo para la parte del contenido de la parte de Fixture y Resultados*/
+	width: 65%;
+	heigth: 25%;
+	margen: 1em;
+	border-collapse: collapse;
 }
-table td{
-	padding:8px;
+
+table td {
+	padding: 8px;
 	birder-bottom: 1px solid #fff;
 }
+
 tr:hover td {
 	background: #00ff80;
 }
-.table{          /*Estilo para la tabla del contenido de la parte de Equipos*/
-	width:64%;
-	height:73%;
-	margin:0.5em;
-	background:#ffe6ff;
-}              
-table p{
-	margin:15px;
-	color:#000000;
+
+.table { /*Estilo para la tabla del contenido de la parte de Equipos*/
+	width: 64%;
+	height: 73%;
+	margin: 0.5em;
+	background: #ffe6ff;
 }
-p{
-	font-family: "Sing on up",Serif;
-	font-size:15px;
-	line-height:70%;
-	text-align:justify;
+
+table p {
+	margin: 15px;
+	color: #000000;
+}
+
+p {
+	font-family: "Sing on up", Serif;
+	font-size: 15px;
+	line-height: 70%;
+	text-align: justify;
 }

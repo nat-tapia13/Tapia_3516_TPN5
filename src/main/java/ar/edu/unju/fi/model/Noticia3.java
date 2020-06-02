@@ -1,11 +1,12 @@
 package ar.edu.unju.fi.model;
 
 import java.time.LocalDate;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
- * Representa a un tipo de noticia difundida de los partidos de fÃºtbol que se
+ * Representa a un tipo de noticia difundida de los partidos de fútbol que se
  * han jugado
  * 
  * @author Natalia
@@ -29,7 +30,9 @@ public class Noticia3 {
 
 	/**
 	 * Representa el Resumen de la noticia
+	 * de los partidos de futbol
 	 */
+	@Autowired
 	private String resumen;
 
 	/*
@@ -42,12 +45,12 @@ public class Noticia3 {
 	 * @param String    titulo
 	 * @param String    resumen
 	 */
-	
-	public Noticia3(LocalDate fecha, String titulo, String resumen) {
-
-		this.fecha = fecha;
-		this.titulo = titulo;
-		this.resumen = resumen;
+     public Noticia3(LocalDate fecha,String titulo,String resumen) {
+    	 
+       this.fecha=fecha;
+       this.titulo=titulo;
+       this.resumen=resumen;
+    	 
 	}
 	/*
 	 * --METODOS ACCESORES---
@@ -110,8 +113,7 @@ public class Noticia3 {
 	@Override
 	public String toString() {
 		return "Noticia3 [fecha=" + fecha + ", titulo=" + titulo + ", resumen=" + resumen + ", getFecha()=" + getFecha()
-				+ ", getTitulo()=" + getTitulo() + ", getResumen()=" + getResumen() + ", getClass()=" + getClass()
-				+ ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
+				+ ", getTitulo()=" + getTitulo() + ", getResumen()=" + getResumen() + "]";
 	}
 
 }

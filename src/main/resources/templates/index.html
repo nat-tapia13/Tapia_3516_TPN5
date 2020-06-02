@@ -1,52 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org"><!-- Cambios sugeridos -->
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="UTF-8">
 <title>INICIO</title>
-<link rel="styLesheet" href="css/estilos.css"/><!-- Link para acceder a la paguina de estilos de css -->
+<link rel="styLesheet" href="css/estilos.css" /><!-- Link para acceder a la paguina de estilos 
+                                                  de css -->
 </head>
 <body>
 	<div id="contenedor">
 		<header>
-			<h1>Liga de fútbol profesional<img src="img/liga_de_futbol.jpg"
-					width=285 height=198 align="right"/></h1>
+			<h1>
+				Liga de fÃºtbol profesional<img src="img/liga_de_futbol.jpg"
+					width=285 height=198 align="right" />
+			</h1>
 		</header>
-		
+
 		<nav>
 			<ul>
-				<li><a href="#">Home</a></li>
+				<li><a href="index.html" target="_blank">Home</a></li>
 				<li><a href="fixture.html">Fixture y resultados</a></li>
-				<li><a href="equipos.html">Equipos</a></li>
+				<li><a href="equipos.html" target="_blank">Equipos</a></li>
 			</ul>
+
+			<div id="Welcome"><!-- Cambios sugeridos -->
+				<h4 th:text=" 'Bienvenido! '+ ${usuario}"></h4>
+			</div>
+
 		</nav>
-		
+
 		<div id="contenido">
-		    <div id="section">
+			<div id="section">
 				<article class="noticias">
 					<h2>Noticias</h2>
 				</article>
-					<table>
-						<tr>
-							<td><img src="img/futbol_1.jpg" width=255 height=160 align="right"></img></td>
-							<td><img src="img/futbol_2.jpg" width=286 height=160 align="middle"></img></td>
-							<td><img src="img/futbol_3.jpg" width=245 height=160></img></td>
-						</tr>
-						
-						<tr>
-						   <th>12/03/20</th>
-						   <th>13/03/20</th>
-						   <th>20/03/20</th>
-						</tr>
-						
-						<tr>
-						   <th>Nueva noticia de los partidos 
-						       suspendidos por la
-								cuarentena</th>
-						   <th>Repetición de la
-						       transmicion 
-						       en vivo de la final de la copa anual de profesional</th>
-						   <th>Reprogramación de sorteos para las proximas fechas</th>
-					 </table>
+				<table>
+					<tr>
+						<td><img src="img/futbol_1.jpg" width=255 height=160
+							align="right"></img></td>
+						<td><img src="img/futbol_2.jpg" width=286 height=160
+							align="middle"></img></td>
+						<td><img src="img/futbol_3.jpg" width=245 height=160></img></td>
+					</tr>
+
+					<tr>
+						<th>12/03/20</th>
+						<th>13/03/20</th>
+						<th>20/03/20</th>
+					</tr>
+
+					<tr>
+						<th>Nueva noticia de los partidos suspendidos por la
+							cuarentena</th>
+						<th>RepeticiÃ³n de la transmicion en vivo de la final de la
+							copa anual de profesional</th>
+						<th>ReprogramaciÃ³n de sorteos para las proximas fechas</th>
+				</table>
 			</div>
 			<div id="aside">
 				<header>
@@ -54,7 +62,7 @@
 				</header>
 			</div>
 			<footer>
-				<h2>Avda.Pedro Ortiz de Zarate N°455.Tel 3884789555</h2>
+				<h2>Avda.Pedro Ortiz de Zarate NÂ°455.Tel 3884789555</h2>
 			</footer>
 		</div>
 	</div>

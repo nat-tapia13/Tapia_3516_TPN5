@@ -1,6 +1,7 @@
 package ar.edu.unju.fi.model;
 
 import java.time.LocalDate;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -54,15 +55,15 @@ public class Cuota6 {
 	 * @param monto
 	 * @param estado
 	 */
-	public Cuota6(long id, LocalDate fechaPago, String periodo, double monto, String estado) {
-
-		Id = id;
+	public Cuota6(long Id, LocalDate fechaPago, String periodo, double monto, String estado) {
+       
+		this.Id = Id;
 		this.fechaPago = fechaPago;
 		this.periodo = periodo;
 		this.monto = monto;
 		this.estado = estado;
-	}
 
+	}	
 	/*
 	 * ---METODOS ACCESORES---
 	 */
@@ -181,5 +182,7 @@ public class Cuota6 {
 				+ ", estado=" + estado + ", usuario=" + usuario + ", getId()=" + getId() + ", getFechaPago()="
 				+ getFechaPago() + ", getPeriodo()=" + getPeriodo() + ", getMonto()=" + getMonto() + ", getEstado()="
 				+ getEstado() + ", getUsuario()=" + getUsuario() + "]";
-	}	
+	}
+		
+	
 }

@@ -11,4 +11,5 @@ public interface IUsuario5 {
 	public Usuario5 mostar();
 	public void eliminar();
 	public Usuario5 modificar();
+	
 }

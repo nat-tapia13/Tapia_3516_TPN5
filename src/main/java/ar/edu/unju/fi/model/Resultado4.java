@@ -1,40 +1,47 @@
 package ar.edu.unju.fi.model;
 
 import java.time.LocalDate;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
- * Representa el resultado de los equipos de los jugadores de fÃºtbol
+ * Representa el resultado de los equipos de los jugadores de fútbol
  * 
  * @author Natalia
  */
 @Component
-public class Resultado4 {
+public class Resultado4{
+
+	/*
+	 * ---ATRIBUTOS--	 
+	 */
 
 	/**
 	 * Representa la fecha en la que se publico los resultados de los goles de la
-	 * Liga de FÃºtbol
+	 * Liga de Fútbol
 	 */
 	private LocalDate fecha;
 	/**
-	 * Representa el resultado del equipo1 en el partido de fÃºtbol
+	 * Representa el resultado del equipo1 en el partido de fútbol
 	 */
+	@Autowired
 	private Equipo1 equipo1;
 	/**
-	 * Representa el resultado del equipo2 en el partido de fÃºtbol
+	 * Representa el resultado del equipo2 en el partido de fútbol
 	 */
+	@Autowired
 	private Equipo1 equipo2;
 
 	/**
-	 * Representa la cantidad de goles del equipo1 en el partido de fÃºtbol
+	 * Representa la cantidad de goles del equipo1 en el partido de fútbol
 	 */
+	
 	private int golesEquipo1;
 
 	/**
-	 * Representa la cantidad de goles del equipo2 en el partido de fÃºtbol
+	 * Representa la cantidad de goles del equipo2 en el partido de fútbol
 	 */
+
 	private int golesEquipo2;
 
 	/*
@@ -46,16 +53,21 @@ public class Resultado4 {
 	 * 
 	 * @param fecha de tipo LocalDate
 	 */
-	@Autowired
-	public Resultado4(LocalDate fecha) {
+	public Resultado4(LocalDate fecha,Equipo1 equipo1,Equipo1 equipo2,int golesEquipo1,int golesEquipo2){
+	
 		this.fecha = fecha;
+		this.equipo1=equipo1;
+		this.equipo2=equipo2;
+		this.golesEquipo1=golesEquipo1;
+		this.golesEquipo2=golesEquipo2;
+		
 	}
 	/*
 	 * --METODOS ACCESORES---
 	 */
 
 	/**
-	 * Devuelve la fecha de publicacion del resultado de la partida de fÃºtbol
+	 * Devuelve la fecha de publicacion del resultado de la partida de fútbol
 	 * 
 	 * @return this fecha valor de fecha
 	 */
@@ -143,16 +155,24 @@ public class Resultado4 {
 	public void setGolesEquipo2(int golesEquipo2) {
 		this.golesEquipo2 = golesEquipo2;
 	}
-
 	@Override
 	public String toString() {
-		return "Resultado4 [fecha=" + fecha + ", equipo1=" + equipo1 + ", equipo2=" + equipo2 + ", golesEquipo1="
-				+ golesEquipo1 + ", golesEquipo2=" + golesEquipo2 + ", getFecha()=" + getFecha() + ", getEquipo1()="
-				+ getEquipo1() + ", getEquipo2()=" + getEquipo2() + ", getGolesEquipo1()=" + getGolesEquipo1()
-				+ ", getGolesEquipo2()=" + getGolesEquipo2() + ", getClass()=" + getClass() + ", hashCode()="
-				+ hashCode() + ", toString()=" + super.toString() + "]";
+		return "Cuota6 [equipo1=" + equipo1 + ", equipo2=" + equipo2 + ", golesEquipo1=" + golesEquipo1
+				+ ", golesEquipo2=" + golesEquipo2 + ", getEquipo1()=" + getEquipo1() + ", getEquipo2()=" + getEquipo2()
+				+ ", getGolesEquipo1()=" + getGolesEquipo1() + ", getGolesEquipo2()=" + getGolesEquipo2() + "]";
 	}
-
-	
+		
 }
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

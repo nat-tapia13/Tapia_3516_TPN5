@@ -3,7 +3,6 @@ package ar.edu.unju.fi.repository;
 import ar.edu.unju.fi.model.Equipo1;
 
 public interface IEquipo1 {
-
 	/*
 	 * ---METODOS---
 	 */
@@ -11,4 +10,5 @@ public interface IEquipo1 {
 	public Equipo1 mostar();
 	public void eliminar();
 	public Equipo1 modificar();
+	
 }

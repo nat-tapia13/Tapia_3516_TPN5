@@ -11,4 +11,6 @@ public interface INoticia3 {
 	public Noticia3 mostar();
 	public void eliminar();
 	public Noticia3 modificar();
+	
+	
 }

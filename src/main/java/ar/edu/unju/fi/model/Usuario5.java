@@ -1,6 +1,7 @@
 package ar.edu.unju.fi.model;
 
 import java.time.LocalDate;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -19,7 +20,7 @@ public class Usuario5 {
 	 * Representa el codigo id del usuario
 	 */
 	@Autowired
-	private int Id;
+	private long Id;
 	/**
 	 * Representa el nombre del usuario
 	 */
@@ -41,7 +42,7 @@ public class Usuario5 {
 	/**
 	 * Representa el documento de identidad del usuario
 	 */
-	private long dni;
+	private long Dni;
 	/**
 	 * Representa la fecha de Alta del usuario
 	 */
@@ -73,20 +74,20 @@ public class Usuario5 {
 	 * @param password
 	 */
 	
-	public Usuario5(int id, String nombre, String apellido, LocalDate fechaNacimiento, String direccion, long dni,
-			LocalDate fechaAlta, String tipo, String password) {
+	public Usuario5(long Id, String nombre, String apellido, LocalDate fechaNacimiento, String direccion, long Dni,
+			LocalDate fechaAlta, String tipo, String password ) {
 		
-		this.Id = id;
+		this.Id = Id;
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.fechaNacimiento = fechaNacimiento;
 		this.direccion = direccion;
-		this.dni = dni;
+		this.Dni = Dni;
 		this.fechaAlta = fechaAlta;
 		this.Tipo = tipo;
 		this.password = password;
-	}
-
+	}		
+	
 	/*
 	 * ---METODOS ACCESORES---
 	 */
@@ -95,7 +96,7 @@ public class Usuario5 {
 	 * 
 	 * @return this Id
 	 */
-	public int getId() {
+	public long getId() {
 		return Id;
 	}
 
@@ -104,7 +105,7 @@ public class Usuario5 {
 	 * 
 	 * @param Id
 	 */
-	public void setPrivateid(int Id) {
+	public void setId(long Id) {
 		this.Id = Id;
 	}
 
@@ -186,7 +187,7 @@ public class Usuario5 {
 	 * @return this dni
 	 */
 	public long getDni() {
-		return dni;
+		return Dni;
 	}
 
 	/**
@@ -194,8 +195,8 @@ public class Usuario5 {
 	 * 
 	 * @param dni
 	 */
-	public void setDni(long dni) {
-		this.dni = dni;
+	public void setDni(long Dni) {
+		this.Dni = Dni;
 	}
 
 	/**
@@ -217,7 +218,7 @@ public class Usuario5 {
 	}
 
 	/**
-	 * Devuelve el valor de la contraseÃ±a del usuario
+	 * Devuelve el valor de la contraseña del usuario
 	 * 
 	 * @return the password
 	 */
@@ -252,12 +253,15 @@ public class Usuario5 {
 	@Override
 	public String toString() {
 		return "Usuario5 [Id=" + Id + ", nombre=" + nombre + ", apellido=" + apellido + ", fechaNacimiento="
-				+ fechaNacimiento + ", direccion=" + direccion + ", dni=" + dni + ", fechaAlta=" + fechaAlta + ", Tipo="
+				+ fechaNacimiento + ", direccion=" + direccion + ", Dni=" + Dni + ", fechaAlta=" + fechaAlta + ", Tipo="
 				+ Tipo + ", password=" + password + ", getId()=" + getId() + ", getNombre()=" + getNombre()
 				+ ", getApellido()=" + getApellido() + ", getFechaNacimiento()=" + getFechaNacimiento()
 				+ ", getDireccion()=" + getDireccion() + ", getDni()=" + getDni() + ", getFechaAlta()=" + getFechaAlta()
 				+ ", getPassword()=" + getPassword() + ", getTipo()=" + getTipo() + "]";
 	}
 
-		
-	}
+	
+	
+	
+	
+}
